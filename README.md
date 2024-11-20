@@ -11,6 +11,10 @@ The groups can be further used for system and catalog authorization and RBAC imp
 The artifacts are also present in the [Release](https://github.com/arghya18/trino-group-provider-ldap-ad/releases) of this project, incase you do not want to build this project.
 
 ```
+升级对应trino对应的jdk版本
+sdk install java 17.0.11-tem
+
+然后编译
 mvn clean package
 ```
 
