@@ -10,7 +10,7 @@
     <packaging>trino-plugin</packaging>
 
     <properties>
-        <trino.version>423</trino.version>
+        <trino.version>430</trino.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
@@ -37,7 +37,7 @@
             <version>237</version>
         </dependency>
 
-        <!-- Presto SPI -->
+        <!-- Trino SPI -->
         <dependency>
             <groupId>io.trino</groupId>
             <artifactId>trino-spi</artifactId>
