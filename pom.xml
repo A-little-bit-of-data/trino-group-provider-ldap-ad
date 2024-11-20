@@ -19,22 +19,22 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>30.1-jre</version>
+            <version>33.3.1-jre</version>
         </dependency>
         <dependency>
             <groupId>io.airlift</groupId>
             <artifactId>log</artifactId>
-            <version>208</version>
+            <version>235</version>
         </dependency>
         <dependency>
             <groupId>io.airlift</groupId>
             <artifactId>units</artifactId>
-            <version>1.6</version>
+            <version>1.10</version>
         </dependency>
         <dependency>
             <groupId>io.airlift</groupId>
             <artifactId>security</artifactId>
-            <version>237</version>
+            <version>285</version>
         </dependency>
 
         <!-- Trino SPI -->
@@ -50,6 +50,10 @@
             <artifactId>trino-plugin-toolkit</artifactId>
             <version>${trino.version}</version>
             <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                </exclusion>
                 <exclusion>
                     <groupId>com.fasterxml.jackson.core</groupId>
                     <artifactId>jackson-annotations</artifactId>
@@ -73,7 +77,7 @@
         <dependency>
             <groupId>io.airlift</groupId>
             <artifactId>testing</artifactId>
-            <version>0.197</version>
+            <version>285</version>
             <scope>test</scope>
         </dependency>
         <dependency>
